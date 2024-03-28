@@ -136,7 +136,7 @@ declare class Validator {
      * @param json - either a JSON string or a parsed JSON object
      * @param schema - the JSON object representing the schema
      */
-    validate(json: any, schema: any, callback: (err: any, valid: boolean) => void): void;
+    validate(json: any, schema: any, options: any, callback?: (err: any, valid: boolean) => void): boolean;
 
     /**
      * Returns an Error object for the most recent failed validation, or null if the validation was successful.
